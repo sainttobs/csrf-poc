@@ -4,22 +4,22 @@
     </head>
     <body>
         <h2>Test POC</h2>
-        <img src='https://app.mopub.com/web-client/api/users/query' width="500px" height="500px">
+        <!-- <img src='https://app.mopub.com/web-client/api/users/query' width="500px" height="500px"> -->
         <!-- <iframe src="https://app.mopub.com/web-client/api/users/query"></iframe> -->
         <script>
 
-            // const xhr = new XMLHttpRequest();
-            // const url = 'https://app.mopub.com/web-client/api/users/query';
+            const xhr = new XMLHttpRequest();
+            const url = 'https://app.mopub.com/web-client/api/users/query';
             
-            // xhr.onreadystatechange = function() {
-            //     if (xhr.readyState == XMLHttpRequest.DONE) {
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
                     
-            //     }
-            // }
-            // xhr.open('GET', url);
-            // // xhr.onreadystatechange = someHandler;
-            // xhr.withCredentials = true;
-            // xhr.send(); 
+                }
+            }
+            xhr.open('GET', url);
+            // xhr.onreadystatechange = someHandler;
+            xhr.withCredentials = true;
+            xhr.send(); 
             
         </script>
     </body>
