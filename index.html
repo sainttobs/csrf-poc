@@ -12,8 +12,9 @@
             const url = 'https://app.mopub.com/web-client/api/users/query';
             
             xhr.onreadystatechange = function() {
-                if (xhr.readyState == XMLHttpRequest.DONE) {
-                    
+                if (xhr.readyState == 4) {
+                    var res = xhr.response
+                    alert(res)
                 }
             }
             xhr.open('GET', url);
